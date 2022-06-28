@@ -1,0 +1,6 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining d:\winddk\2195\src\sys directory for files to compile.
+Linking d:\winddk\2195\src\sys directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= 386=1'
+
+Stop.

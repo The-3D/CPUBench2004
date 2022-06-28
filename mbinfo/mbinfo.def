@@ -1,0 +1,10 @@
+; mbinfo.def : Declares the module parameters for the DLL.
+
+LIBRARY      "mbinfo"
+DESCRIPTION  'mbinfo Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+
+	GetPCIDevicesInformations @1

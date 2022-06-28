@@ -1,0 +1,834 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CPUBench2004.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.ita\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CPUBench2004.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni su CPUBench2004"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CPUBench2004 Versione 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CPUBENCH2004_DIALOG DIALOGEX 0, 0, 410, 332
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CPUBench2006 version 1.0 Alpha1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Run benchmark",IDC_RUNBENCHMARK,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,193,310,70,20
+    CONTROL         "About...",IDC_BUTTON2,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,266,310,69,20
+    CONTROL         "Exit",IDC_EXIT,"Button",BS_OWNERDRAW | WS_TABSTOP,338,
+                    310,70,20
+    LTEXT           "Static",IDC_LOGO,4,3,402,48
+END
+
+IDD_BENCHMARKSETTINGSDLG_DIALOG DIALOG DISCARDABLE  0, 0, 185, 140
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Generic tests",IDC_TITLE1,14,5,105,8
+    LTEXT           "Video encoding (XviD)",IDC_WINDOWSMEDIA,34,13,145,8
+    LTEXT           "Professional/scientific tests",IDC_TITLE3,14,32,116,8
+    LTEXT           "CAD Benchmark (OpenGL)",IDC_CAD,34,49,87,8
+    LTEXT           "Database performance (MS Jet engine)",IDC_DB,34,65,145,
+                    8
+    LTEXT           "Direct3D 9.0 performance",IDC_DIRECT3D,34,20,145,8
+    LTEXT           "Memory tests",IDC_TITLE4,14,76,99,8
+    LTEXT           "RAM ALU Bandwidth",IDC_RAM,34,84,145,8
+    CONTROL         "Configure...",IDC_CONFIGURE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,41,116,102,17
+    LTEXT           "Raytracing rendering",IDC_RT1,34,57,145,8
+    LTEXT           "RAM FPU Bandwidth",IDC_RAM2,34,93,145,8
+    LTEXT           "Memory managment API benchmark",IDC_RAM3,34,101,145,8
+    LTEXT           "Molecular viewer (OpenGL)",IDC_RT2,34,41,145,8
+END
+
+IDD_CPUINFOITEMDLG_DIALOG DIALOG DISCARDABLE  0, 0, 213, 236
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Generic CPU informations",IDC_TITLE1,6,10,127,9
+    LTEXT           "CPU Name:",IDC_STATIC,46,22,36,8
+    LTEXT           "AMD Athlon 64 FX",IDC_CPUNAME,90,22,123,8
+    LTEXT           "CPU Vendor:",IDC_STATIC,46,33,44,8
+    LTEXT           "AuthenticAMD",IDC_CPUVENDOR,90,33,123,8
+    LTEXT           "Brand Name:",IDC_STATIC,46,44,44,8
+    LTEXT           "AMD Athlon64 FX-53 Processor",IDC_BRANDNAME,90,44,123,
+                    15
+    CONTROL         "Detailed informations...",IDC_ADVINFO,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,15,213,87,17
+    CONTROL         "Cache informations...",IDC_CACHEINFO,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,107,213,87,17
+    LTEXT           "CPU model details",IDC_TITLE2,6,66,127,9
+    LTEXT           "Signature:",IDC_STATIC,46,79,36,8
+    LTEXT           "Family 7 model 2 step 0 ",IDC_SIGNATURE,90,79,123,8
+    LTEXT           "Codename:",IDC_STATIC,46,88,44,8
+    LTEXT           "AMD SledgeHammer (K8)",IDC_CODENAME,90,88,123,8
+    LTEXT           "L1 and L2 cache details",IDC_TITLE3,6,149,127,9
+    LTEXT           "L1 I. cache:",IDC_STATIC,46,161,44,8
+    LTEXT           "64 KByte ",IDC_L1INSTRCACHE,90,161,123,8
+    LTEXT           "L1 D. cache:",IDC_STATIC,46,171,44,8
+    LTEXT           "64 KByte",IDC_L1DATACACHE,90,171,123,8
+    LTEXT           "L2 Cache:",IDC_STATIC,46,182,44,8
+    LTEXT           "1024 KByte",IDC_L2CACHE,90,182,123,8
+    LTEXT           "Frequency:",IDC_STATIC,46,118,44,8
+    LTEXT           "2400.00 MHz ( 2.4 GHz )",IDC_FREQUENCY,90,118,123,8
+    LTEXT           "Trace cache:",IDC_STATIC,46,193,44,8
+    LTEXT           "absent",IDC_TRACECACHE,90,193,123,8
+    LTEXT           "Bus type:",IDC_STATIC,46,98,44,8
+    LTEXT           "",IDC_BUSTYPE,90,98,123,8
+    LTEXT           "Socket:",IDC_STATIC,46,108,44,8
+    LTEXT           "socket 940 (mPGA 940 socket)",IDC_SOCKETNAME,90,108,123,
+                    8
+    CONTROL         "",IDC_CPULOGO,"Static",SS_BITMAP | SS_REALSIZEIMAGE,10,
+                    23,15,13
+    LTEXT           "FSB speed:",IDC_STATIC,46,128,44,8
+    LTEXT           "533.33 MHz ",IDC_BUSSPEED,90,128,123,8
+END
+
+IDD_OSINFOITEMDLG_DIALOG DIALOG DISCARDABLE  0, 0, 186, 39
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "OS Name:",IDC_STATIC,6,5,33,8
+    LTEXT           "",IDC_OSNAME,39,5,130,8
+    LTEXT           "Memory free:",IDC_STATIC,6,22,44,8
+    CONTROL         "Progress1",IDC_MEMFREE,"msctls_progress32",0x0,53,22,59,
+                    10
+    CONTROL         "more...",IDC_MORE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    142,18,40,16
+    LTEXT           "",IDC_MEMFREEVAL,114,22,24,9
+END
+
+IDD_SYSINFODLG_DIALOG DIALOG DISCARDABLE  0, 0, 532, 332
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CPUBench2006 System informations module"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,336,311,63,
+                    19
+    CONTROL         "Update",IDC_UPDATE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    401,311,61,19
+    CONTROL         "Report...",IDC_CREATEREPORT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,465,311,62,19
+END
+
+IDD_EXTCPUINFOITEMDLG_DIALOG DIALOG DISCARDABLE  0, 0, 333, 204
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Manufacturer:",IDC_LBL1,7,7,87,17
+    LTEXT           "Processor Name:",IDC_LBL2,7,24,87,16
+    LTEXT           "Codename:",IDC_LBL4,7,60,87,18
+    LTEXT           "",IDC_CPUNAME,94,24,144,18
+    LTEXT           "",IDC_VENDORNAME,94,7,144,17
+    LTEXT           "",IDC_CODENAME,94,60,144,18
+    LTEXT           "Platform:",IDC_LBL5,7,78,87,11
+    LTEXT           "",IDC_PLATFORM,94,78,144,11
+    CONTROL         "",IDC_CPULOGO,"Static",SS_BITMAP,238,7,15,13
+    LTEXT           "CPU Frequency:",IDC_STATIC,7,115,71,8
+    LTEXT           "L1 instruction cache:",IDC_STATIC,7,139,71,8
+    LTEXT           "Frequency ratio:",IDC_STATIC,7,131,71,8
+    LTEXT           "L1 data cache:",IDC_STATIC,7,147,71,8
+    LTEXT           "Built-in brand name:",IDC_LBL3,7,42,87,14
+    LTEXT           "",IDC_BRANDNAME,94,42,144,15
+    CONTROL         "CPU features...",IDC_FEATURES,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,165,180,75,17
+    CONTROL         "Cache details...",IDC_CACHEDETAILS,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,84,180,75,17
+    LTEXT           "L2 cache:",IDC_STATIC,7,155,71,8
+    LTEXT           "",IDC_CPUFREQUENCY,78,115,100,8
+    LTEXT           "",IDC_L1ICACHE,78,139,100,8
+    LTEXT           "",IDC_FREQUENCYRATIO,78,131,100,8
+    LTEXT           "",IDC_L1DCACHE,78,147,100,8
+    LTEXT           "",IDC_L2CACHE,78,155,100,8
+    LTEXT           "MMX support:",IDC_STATIC,178,115,60,8
+    LTEXT           "SSE3 support:",IDC_STATIC,178,139,60,8
+    LTEXT           "SSE2 support:",IDC_STATIC,178,131,60,8
+    LTEXT           "AMD64 support:",IDC_STATIC,178,147,60,8
+    LTEXT           "HyperThreading:",IDC_STATIC,178,155,60,8
+    LTEXT           "",IDC_MMX,238,115,88,8
+    LTEXT           "",IDC_SSE3,238,139,88,8
+    LTEXT           "",IDC_SSE2,238,131,88,8
+    LTEXT           "",IDC_AMD64,238,147,88,8
+    LTEXT           "",IDC_HTSUPPORT,238,155,88,8
+    LTEXT           "Trace cache:",IDC_STATIC,7,163,71,10
+    LTEXT           "",IDC_TRACECACHE,78,163,100,10
+    LTEXT           "PSE-36 support:",IDC_STATIC,178,163,60,10
+    LTEXT           "",IDC_PSE36,238,163,88,10
+    LTEXT           "Frequency range:",IDC_STATIC,7,123,71,8
+    LTEXT           "",IDC_FREQUENCYRANGE,78,123,100,8
+    LTEXT           "SSE support:",IDC_STATIC,178,123,60,8
+    LTEXT           "",IDC_SSE,238,123,88,8
+    LTEXT           "CPU signature:",IDC_STATIC,7,107,71,8
+    LTEXT           "",IDC_SIGNATURE,78,107,100,8
+    LTEXT           "Default vcore:",IDC_STATIC,178,107,60,8
+    LTEXT           "",IDC_DEFVCORE,238,107,88,8
+END
+
+IDD_EXTOSINFODLG_DIALOG DIALOG DISCARDABLE  0, 0, 194, 105
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "OS Name:",IDC_LBL,9,7,51,10
+    LTEXT           "Static",IDC_OSNAME,72,7,115,10
+    LTEXT           "OS Revision:",IDC_LBL9,9,24,51,8
+    LTEXT           "Static",IDC_REVISION,72,24,115,8
+    LTEXT           "User name:",IDC_LBL10,9,42,51,8
+    LTEXT           "Static",IDC_USERNAME,72,42,115,8
+    LTEXT           "Computer name:",IDC_LBL11,9,33,63,8
+    LTEXT           "Static",IDC_COMPUTERNAME,72,33,115,8
+    LTEXT           "Static",IDC_SERVICEPACK,72,69,115,8
+    LTEXT           "Standby mode:",IDC_LBL13,9,79,51,8
+    LTEXT           "Static",IDC_STANDBY,72,79,115,8
+    LTEXT           "Main directory:",IDC_LBL15,9,51,51,8
+    LTEXT           "Static",IDC_MAINDIRECTORY,72,51,115,8
+    LTEXT           "Boot mode:",IDC_LBL17,9,60,63,8
+    LTEXT           "Static",IDC_BOOTMODE,72,60,115,8
+    LTEXT           "Service pack:",IDC_STATIC,9,69,44,8
+    LTEXT           "Current resolution:",IDC_LBL18,9,88,63,8
+    LTEXT           "Static",IDC_RESOLUTION,72,88,115,8
+END
+
+IDD_EXTMEMORYINFODLG_DIALOG DIALOG DISCARDABLE  0, 0, 194, 155
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Physical memory:",IDC_STATIC,9,7,61,10
+    LTEXT           "",IDC_PHYSMEM,67,7,117,10
+    LTEXT           "Page file size:",IDC_STATIC,9,20,61,10
+    LTEXT           "",IDC_PAGESIZE,67,20,117,10
+    LTEXT           "Virtual size:",IDC_STATIC,9,34,61,10
+    LTEXT           "",IDC_VIRTUALSIZE,67,34,117,10
+    LTEXT           "total memory load:",IDC_STATIC,9,59,61,10
+    CONTROL         "Progress1",IDC_TOTALLOAD,"msctls_progress32",0x0,72,58,
+                    90,12
+    LTEXT           "page file Free:",IDC_STATIC,9,80,61,10
+    CONTROL         "Progress1",IDC_PAGEFILEFREE,"msctls_progress32",0x0,72,
+                    78,90,12
+    LTEXT           "physical RAM Free:",IDC_STATIC,9,101,61,10
+    CONTROL         "Progress1",IDC_RAMFREE,"msctls_progress32",0x0,72,100,
+                    90,12
+    LTEXT           "user resources:",IDC_STATIC,9,122,61,10
+    CONTROL         "Progress1",IDC_USERFREE,"msctls_progress32",0x0,72,121,
+                    90,12
+    CTEXT           "",IDC_MEMLOAD,162,59,29,9
+    CTEXT           "",IDC_PAGEFREE,162,80,29,9
+    CTEXT           "",IDC_RAMFREEPERCENT,162,102,29,9
+    CTEXT           "",IDC_USERFREEPERCENT,162,123,29,9
+END
+
+IDD_EXTMBINFODLG_DIALOG DIALOG DISCARDABLE  0, 0, 327, 79
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Chipset ID:",IDC_STATIC,7,24,41,8
+    LTEXT           "Static",IDC_CHIPSETID,62,24,105,8
+    CONTROL         "Other PCI devices...",IDC_OTHERPCI,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,237,59,84,18
+    LTEXT           "FSB speed:",IDC_STATIC,7,45,49,8
+    LTEXT           "",IDC_FSBSPEED,62,45,105,8
+    LTEXT           "PCI latency:",IDC_STATIC,7,64,49,8
+    LTEXT           "Static",IDC_PCILATENCY,62,64,105,8
+    LTEXT           "Chipset Vendor:",IDC_STATIC,7,34,55,8
+    LTEXT           "Static",IDC_CHIPSETVENDOR,62,34,105,8
+    LTEXT           "Chipset name:",IDC_LBL,7,6,55,8
+    LTEXT           "Static",IDC_NAME,74,6,250,8
+    LTEXT           "BIOS name:",IDC_STATIC,167,24,41,8
+    LTEXT           "Static",IDC_BIOSNAME,216,24,108,8
+    LTEXT           "BIOS version:",IDC_STATIC,167,34,49,8
+    LTEXT           "Static",IDC_BIOSVERSION,216,34,108,8
+    LTEXT           "BIOS date:",IDC_STATIC,167,44,49,8
+    LTEXT           "Static",IDC_BIOSDATE,216,44,108,8
+    LTEXT           "Bus type:",IDC_STATIC,7,54,55,9
+    LTEXT           "",IDC_BUSTYPE,62,54,138,9
+END
+
+IDD_CACHEINFODLG_DIALOG DIALOG DISCARDABLE  0, 0, 354, 327
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "cache informations"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "DATA TLB Associativity:",IDC_STATIC,32,50,77,8
+    LTEXT           "Instr.TLB Associativity:",IDC_STATIC,32,68,77,8
+    LTEXT           "static",IDC_L1DTLB4M_ASS,109,50,68,8,SS_CENTERIMAGE
+    LTEXT           "static",IDC_L1ITLB4M_ASS,109,68,68,8,SS_CENTERIMAGE
+    LTEXT           "DATA TLB # entries:",IDC_STATIC,32,59,77,8
+    LTEXT           "static",IDC_L1DTLB4M_ENTRIES,109,59,68,8,SS_CENTERIMAGE
+    LTEXT           "Instr. TLB # entries:",IDC_STATIC,32,78,77,8
+    LTEXT           "static",IDC_L1ITLB4M_ENTRIES,109,78,68,8,SS_CENTERIMAGE
+    LTEXT           "DATA TLB Associativity:",IDC_STATIC,204,50,77,8
+    LTEXT           "Instr.TLB Associativity:",IDC_STATIC,204,68,77,8
+    LTEXT           "static",IDC_L1D_TLB4K_ASSOCIATIVITY,281,50,65,8,
+                    SS_CENTERIMAGE
+    LTEXT           "static",IDC_L1I_TLB4K_ASSOCIATIVITY,281,68,65,8,
+                    SS_CENTERIMAGE
+    LTEXT           "DATA TLB # entries:",IDC_STATIC,204,59,75,8
+    LTEXT           "static",IDC_L1D_TLB4K_ENTRIES,281,59,65,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Instr. TLB # entries:",IDC_STATIC,204,78,75,8
+    LTEXT           "static",IDC_L1I_TLB4K_ENTRIES,281,78,65,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Associativity:",IDC_STATIC,32,116,52,8
+    LTEXT           "Line size:",IDC_STATIC,32,137,77,8
+    LTEXT           "static",IDC_L1D_ASSOCIATIVITY,109,116,68,8
+    LTEXT           "static",IDC_L1D_LINESIZE,109,137,68,8
+    LTEXT           "Lines per tag:",IDC_STATIC,32,126,69,8
+    LTEXT           "static",IDC_L1D_LINESPERTAG,109,126,68,8
+    LTEXT           "L1 Data cache size:",IDC_STATIC,32,147,77,8
+    LTEXT           "static",IDC_L1D_CACHESIZE,109,147,68,8
+    LTEXT           "Associativity:",IDC_STATIC,204,116,52,8
+    LTEXT           "Line size:",IDC_STATIC,204,137,73,9
+    LTEXT           "static",IDC_L1I_ASSOCIATIVITY,281,116,65,8
+    LTEXT           "static",IDC_L1I_LINESIZE,281,137,65,8
+    LTEXT           "Lines per tag:",IDC_STATIC,204,126,69,8
+    LTEXT           "static",IDC_L1I_LINESPERTAG,281,126,65,8
+    LTEXT           "L1 Instr. cache size:",IDC_STATIC,204,147,75,8
+    LTEXT           "static",IDC_L1I_CACHESIZE,281,147,65,8
+    LTEXT           "DATA TLB Associativity:",IDC_STATIC,32,188,77,8
+    LTEXT           "Instr.TLB Associativity:",IDC_STATIC,32,208,77,8
+    LTEXT           "static",IDC_L2D_TLB4M_ASSOCIATIVITY,109,188,64,8
+    LTEXT           "static",IDC_L2I_TLB4M_ASSOCIATIVITY,109,208,64,8
+    LTEXT           "DATA TLB # entries:",IDC_STATIC,32,198,77,8
+    LTEXT           "static",IDC_L2D_TLB4M_ENTRIES,109,198,64,8
+    LTEXT           "Instr. TLB # entries:",IDC_STATIC,32,218,77,8
+    LTEXT           "static",IDC_L2I_TLB4M_ENTRIES,109,218,65,8
+    LTEXT           "DATA TLB Associativity:",IDC_STATIC,204,188,77,8
+    LTEXT           "Instr.TLB Associativity:",IDC_STATIC,204,208,77,8
+    LTEXT           "static",IDC_L2D_TLB4K_ASSOCIATIVITY,281,188,65,8
+    LTEXT           "static",IDC_L2I_TLB4K_ASSOCIATIVITY,281,208,65,8
+    LTEXT           "DATA TLB # entries:",IDC_STATIC,204,198,75,8
+    LTEXT           "static",IDC_L2D_TLB4K_ENTRIES,281,198,65,8
+    LTEXT           "Instr. TLB # entries:",IDC_STATIC,204,218,75,8
+    LTEXT           "static",IDC_L2I_TLB4K_ENTRIES,281,218,65,8
+    LTEXT           "Associativity:",IDC_STATIC,32,256,52,8
+    LTEXT           "Line size:",IDC_STATIC,32,275,77,8
+    LTEXT           "static",IDC_L2_ASSOCIATIVITY,109,256,63,8
+    LTEXT           "static",IDC_L2_LINESIZE,109,275,63,8
+    LTEXT           "Lines per tag:",IDC_STATIC,32,266,69,8
+    LTEXT           "static",IDC_L2_LINESPERTAG,109,266,64,8
+    LTEXT           "L2 cache size:",IDC_STATIC,32,284,77,8
+    LTEXT           "static",IDC_L2_CACHESIZE,109,284,63,8
+    LTEXT           "Associativity:",IDC_STATIC,204,256,52,8,WS_DISABLED
+    LTEXT           "Line size:",IDC_STATIC,204,275,73,8,WS_DISABLED
+    LTEXT           "static",IDC_L2CACHE_ASSOCIATIVITY2,281,256,68,8,
+                    WS_DISABLED
+    LTEXT           "static",IDC_L2CACHE_LINESIZE2,281,275,58,8,WS_DISABLED
+    LTEXT           "Lines per tag:",IDC_STATIC,204,264,69,10,WS_DISABLED
+    LTEXT           "static",IDC_L2CACHE_LINESPERTAG2,281,264,61,10,
+                    WS_DISABLED
+    LTEXT           "L3 cache size:",IDC_L1_DATA_CACHE_SIZE4,204,284,53,8,
+                    WS_DISABLED
+    LTEXT           "static",IDC_L2CACHE_SIZE2,281,284,68,8,WS_DISABLED
+    LTEXT           "L1 Instruction cache",IDC_LBL4,188,102,77,8
+    LTEXT           "L1 Data cache",IDC_LBL3,16,100,103,10
+    LTEXT           "L2 TLB (2/4 MByte pages)",IDC_LBL5,16,172,103,8
+    LTEXT           "L2 TLB ( 4 KByte pages)",IDC_LBL6,188,172,106,8
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,109,306,64,
+                    16
+    LTEXT           "L2 cache",IDC_LBL7,16,240,103,8
+    LTEXT           "L3 cache",IDC_LBL8,188,240,101,8
+    LTEXT           "L1 TLB (2/4 MByte pages)",IDC_LBL1,16,35,103,8
+    LTEXT           "L1 TLB (4K pages)",IDC_LBL2,188,35,101,8
+    CONTROL         "Cache latency...",IDC_CACHELATENCY,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,179,306,64,16
+    CTEXT           "",IDC_MAINTITLE,8,7,339,19,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,7,339,295
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,7,339,19
+END
+
+IDD_CPUFEATURESDLG_DIALOG DIALOG DISCARDABLE  0, 0, 307, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CPU Features"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,128,293,50,
+                    18
+END
+
+IDD_DEVICESLISTDLG_DIALOG DIALOG DISCARDABLE  0, 0, 328, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PCI devices list"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,138,202,50,
+                    16
+    CONTROL         "List1",IDC_DEVLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,8,15,313,184
+    LTEXT           "PCI Devices list:",IDC_TITLE,3,4,130,8
+END
+
+IDD_REPORTDLG_DIALOG DIALOG DISCARDABLE  0, 0, 372, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Report"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,225,212,68,
+                    16
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,299,
+                    212,66,16
+    CONTROL         "Include CPU informations",IDC_CPUINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,64,104,10
+    EDITTEXT        IDC_SYSTEMDETAILS,8,114,206,113,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_BORDER | WS_VSCROLL
+    EDITTEXT        IDC_TESTERNAME,75,75,139,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    LTEXT           "Tester name:",IDC_STATIC,7,78,64,11
+    EDITTEXT        IDC_SYSTEMNAME,75,90,139,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    LTEXT           "System Name:",IDC_STATIC,7,91,64,11
+    LTEXT           "Comments ( System details, cooling system etc):",
+                    IDC_STATIC,9,105,164,8
+    CONTROL         "Include Tester informations",IDC_INCLUDETESTERINFO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,60,101,10
+    CONTROL         "Include benchmark results",IDC_BENCHRESULTS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,226,180,108,
+                    10
+    CONTROL         "Include OS Informations",IDC_OSINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,123,118,8
+    CONTROL         "Include Motherboard informations",IDC_MBINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,141,121,10
+    CONTROL         "Include Cache informations",IDC_CACHEINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,103,98,8
+    CONTROL         "Include CPU features list",IDC_CPUFEATURES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,83,108,10
+    CONTROL         "Include PCI devices list",IDC_PCIDEVS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,226,160,121,10
+END
+
+IDD_RESULTDLG_DIALOG DIALOGEX 0, 0, 396, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CPUBench2006 result window"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Congratulations!!! you have successfully completed the benchmark. Your overall score is:",
+                    IDC_STATIC,15,82,223,18
+    LTEXT           "for more informations about benchmarks and results, please click on ""Bench details"" or ""Graph of results"".",
+                    IDC_STATIC,7,184,283,19
+    LTEXT           "CPUMarks",IDC_RESULT2,131,109,104,21,0,
+                    WS_EX_TRANSPARENT
+    RTEXT           "asd",IDC_RESULT,45,109,79,21
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,292,7,97,20
+    CONTROL         "Benchmark details..",IDC_BENCHDETAILS,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,292,60,97,18
+    CONTROL         "CPU informations...",IDC_CPUINFO,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,292,81,97,18
+    CONTROL         "Save project...",IDC_SAVE_PROJECT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,292,102,97,18
+    CONTROL         "Graph of results..",IDC_GRAPHOFRESULT,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,292,39,97,18
+    LTEXT           "(1): A slight variation from two results can be caused by system activities ( swapping,        HW monitoring activities, system services etc). Variance can be about +/-0.8% max. ",
+                    IDC_STATIC,7,203,281,16
+    LTEXT           "RAM Score:",IDC_LBLRAMSCORE,19,157,80,14
+    LTEXT           "Static",IDC_RAMSCORE,101,157,110,15
+    LTEXT           "Static",IDC_BANNER,295,127,94,22
+    LTEXT           "",IDC_RESULTCTRL,14,14,266,61
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,7,278,171
+    LTEXT           "Static",IDC_BANNER2,295,154,94,22
+    LTEXT           "Static",IDC_BANNER3,295,179,94,44
+END
+
+IDD_SPLASHDLG_DIALOG DIALOG DISCARDABLE  0, 0, 280, 47
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "splash",IDC_STATIC,"Static",SS_BITMAP,0,0,278,56
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CPUBench2006\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CPUBench2006\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CPUBench2006.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CPUBench2006\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CPUBENCH2004_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_BENCHMARKSETTINGSDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 14
+        VERTGUIDE, 30
+        VERTGUIDE, 34
+        HORZGUIDE, 13
+        HORZGUIDE, 20
+        HORZGUIDE, 41
+        HORZGUIDE, 49
+        HORZGUIDE, 57
+        HORZGUIDE, 84
+    END
+
+    IDD_CPUINFOITEMDLG_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 6
+        VERTGUIDE, 46
+        VERTGUIDE, 90
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+        HORZGUIDE, 75
+        HORZGUIDE, 87
+        HORZGUIDE, 96
+        HORZGUIDE, 106
+        HORZGUIDE, 116
+        HORZGUIDE, 126
+        HORZGUIDE, 136
+        HORZGUIDE, 158
+        HORZGUIDE, 169
+        HORZGUIDE, 179
+        HORZGUIDE, 190
+        HORZGUIDE, 201
+    END
+
+    IDD_SYSINFODLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 525
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_EXTCPUINFOITEMDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        VERTGUIDE, 7
+        VERTGUIDE, 78
+        VERTGUIDE, 94
+        VERTGUIDE, 178
+        VERTGUIDE, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+        HORZGUIDE, 24
+        HORZGUIDE, 42
+        HORZGUIDE, 60
+        HORZGUIDE, 78
+        HORZGUIDE, 89
+        HORZGUIDE, 115
+        HORZGUIDE, 123
+        HORZGUIDE, 131
+        HORZGUIDE, 139
+        HORZGUIDE, 147
+        HORZGUIDE, 155
+        HORZGUIDE, 163
+        HORZGUIDE, 173
+    END
+
+    IDD_EXTOSINFODLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 187
+        VERTGUIDE, 72
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+        HORZGUIDE, 17
+        HORZGUIDE, 32
+        HORZGUIDE, 41
+        HORZGUIDE, 50
+        HORZGUIDE, 59
+        HORZGUIDE, 68
+        HORZGUIDE, 77
+        HORZGUIDE, 87
+    END
+
+    IDD_EXTMEMORYINFODLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 191
+        VERTGUIDE, 70
+        VERTGUIDE, 72
+        VERTGUIDE, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_EXTMBINFODLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        VERTGUIDE, 62
+        VERTGUIDE, 149
+        VERTGUIDE, 167
+        VERTGUIDE, 216
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 72
+        HORZGUIDE, 9
+        HORZGUIDE, 24
+        HORZGUIDE, 34
+        HORZGUIDE, 45
+        HORZGUIDE, 54
+        HORZGUIDE, 63
+    END
+
+    IDD_CACHEINFODLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 347
+        VERTGUIDE, 16
+        VERTGUIDE, 32
+        VERTGUIDE, 109
+        VERTGUIDE, 188
+        VERTGUIDE, 204
+        VERTGUIDE, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+        HORZGUIDE, 35
+        HORZGUIDE, 50
+        HORZGUIDE, 59
+        HORZGUIDE, 68
+        HORZGUIDE, 78
+        HORZGUIDE, 110
+        HORZGUIDE, 124
+        HORZGUIDE, 134
+        HORZGUIDE, 145
+        HORZGUIDE, 155
+        HORZGUIDE, 180
+        HORZGUIDE, 196
+        HORZGUIDE, 206
+        HORZGUIDE, 216
+        HORZGUIDE, 226
+        HORZGUIDE, 248
+        HORZGUIDE, 264
+        HORZGUIDE, 274
+        HORZGUIDE, 283
+        HORZGUIDE, 292
+    END
+
+    IDD_CPUFEATURESDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 311
+    END
+
+    IDD_DEVICESLISTDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 321
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_REPORTDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        VERTGUIDE, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_RESULTDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+INTELPENTIUM4           BITMAP  DISCARDABLE     "res\\Intel_P4_HT48.bmp"
+AMDATHLON64             BITMAP  DISCARDABLE     "res\\AMD_Athlon_6448.bmp"
+AMDATHLON64FX           BITMAP  DISCARDABLE     "res\\AMD_Athlon_64_FX48.bmp"
+AMDATHLON               BITMAP  DISCARDABLE     "res\\athlon48.bmp"
+AMDATHLONXP             BITMAP  DISCARDABLE     "res\\AMD_Athlon_XP48.bmp"
+AMDDURON                BITMAP  DISCARDABLE     "res\\duron48.bmp"
+AMDK6                   BITMAP  DISCARDABLE     "res\\AMD_K648.bmp"
+AMDK62                  BITMAP  DISCARDABLE     "res\\k6248.bmp"
+INTELCELERON            BITMAP  DISCARDABLE     "res\\celeron48.bmp"
+INTELPENTIUM3           BITMAP  DISCARDABLE     "res\\ipIII48.bmp"
+INTELPENTIUM3XEON       BITMAP  DISCARDABLE     "res\\Intel_PIII_Xeon48.bmp"
+INTELPENTIUM4XEON       BITMAP  DISCARDABLE     "res\\Intel_P4_Xeon48.bmp"
+AMDOPTERON              BITMAP  DISCARDABLE     "res\\AMD_Opteron_6448.bmp"
+INTELPENTIUMM           BITMAP  DISCARDABLE     "res\\Intel_Pentium_M48.bmp"
+INTELPENTIUM4LARGE      BITMAP  DISCARDABLE     "res\\Intel_P4_HT.bmp"
+AMDATHLON64LARGE        BITMAP  DISCARDABLE     "res\\AMD_Athlon_64.bmp"
+AMDATHLONXPLARGE        BITMAP  DISCARDABLE     "res\\AMD_Athlon_XP.bmp"
+AMDATHLON64FXLARGE      BITMAP  DISCARDABLE     "res\\AMD_Athlon_64_FX.bmp"
+INTELPENTIUMMLARGE      BITMAP  DISCARDABLE     "res\\Intel_Pentium_M.bmp"
+LOGO                    BITMAP  DISCARDABLE     "res\\logo.bmp"
+splash                  BITMAP  DISCARDABLE     "res\\splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Infor&mazioni su CPUBench2006..."
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CPUBench2004.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.ita\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

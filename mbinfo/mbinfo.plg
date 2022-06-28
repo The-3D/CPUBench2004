@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mbinfo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\emilio_2\IMPOST~1\Temp\RSP7B.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/mbinfo.pdb" /machine:I386 /def:".\mbinfo.def" /out:"..\mbinfo.dll" /implib:"Release/mbinfo.lib" 
+".\Release\mbinfo.obj"
+".\Release\SearchDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\mbinfo.res"
+".\Release\DRVLOAD.OBJ"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\emilio_2\IMPOST~1\Temp\RSP7B.tmp"
+<h3>Output Window</h3>
+Linking...
+xilink6: executing 'C:\PROGRA~1\MICROS~2\VC98\Bin\link.exe'
+   Creating library Release/mbinfo.lib and object Release/mbinfo.exp
+
+
+
+<h3>Results</h3>
+mbinfo.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

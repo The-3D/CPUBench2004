@@ -1,0 +1,39 @@
+; cpuinfo.def : Declares the module parameters for the DLL.
+
+LIBRARY      "cpuinfo"
+DESCRIPTION  'cpuinfo Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+	GetVendorString @1
+	GetCPUFeatures @2
+	GetCPUFrequency @3
+	GetCacheInfo @4
+	GetBrandString @5
+	GetCPUModelDetails @6
+	GetHTSupport @7
+	HasMMX @8
+	HasSSE @9
+	HasSSE2 @10
+	HasSSE3 @11
+	HasAMD64 @12
+	HasPSE36 @13
+	HasFPU @14
+	HasVirtualMode @15
+	HasDebugExt @16
+	HasPageSizeExt @17
+	HasTimestamp @18
+	HasPAE @19
+	HasMachineCheck @20
+	HasCMPXCHG8B @21
+	HasAPIC @22
+	HasSysEnterExit @23
+	HasMTRR @24
+	HasGlobalPagingExt @25
+	HasCMOV @26
+	HasCLFLUSH @27
+	HasFXSAVERESTOR @28
+	Has3DNow @29
+	HasXtended3DNow @30
+	HasXtendedMMX @31

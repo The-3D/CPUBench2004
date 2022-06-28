@@ -1,0 +1,9 @@
+; benchmarks.def : Declares the module parameters for the DLL.
+
+LIBRARY      "benchmarks"
+DESCRIPTION  'benchmarks Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+	RunBenchmark @1

@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Benchmarksintel - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D _WIN32_WINNT=0x400 /FR"Debug/" /Fp"Debug/Benchmarksintel.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\my programs\CPUBench2004\Benchmarksintel\Benchmark.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\BenchmarkDlg.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\BenchmarkEnvironment.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\Benchmarksintel.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\BenchmarkStatusDlg.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\CompressionBenchmark.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\Direct3DBenchmark.cpp"
+"C:\DXSDK\Samples\C++\DirectShow\Common\dshowutil.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\ExtProgressCtrl.cpp"
+"C:\my programs\CPUBench2004\Gradient.cpp"
+"C:\my programs\CPUBench2004\ItemBkDrawer.cpp"
+"C:\my programs\CPUBench2004\Benchmarksintel\VideoCompressionBenchmark.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP2B.tmp" 
+Creating temporary file "C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP2C.tmp" with contents
+[
+C:\DXSDK\Samples\C++\DirectShow\BaseClasses\debug\strmbasd.lib winmm.lib ddraw.lib dxguid.lib d3dx9dt.lib d3d9.lib d3dxof.lib comctl32.lib winmm.lib /nologo /stack:0x200000,0x200000 /subsystem:windows /dll /incremental:yes /pdb:"Debug/Benchmarksintel.pdb" /debug /machine:I386 /def:".\Benchmarksintel.def" /out:"..\Benchmarksintel.dll" /implib:"Debug/Benchmarksintel.lib" /pdbtype:sept /ignore:4089 /ignore:4078 
+".\Debug\d3dfont.obj"
+".\Debug\d3dutil.obj"
+".\Debug\dxutil.obj"
+".\Debug\Benchmark.obj"
+".\Debug\BenchmarkDlg.obj"
+".\Debug\BenchmarkEnvironment.obj"
+".\Debug\Benchmarksintel.obj"
+".\Debug\BenchmarkStatusDlg.obj"
+".\Debug\CompressionBenchmark.obj"
+".\Debug\Direct3DBenchmark.obj"
+".\Debug\dshowutil.obj"
+".\Debug\ExtProgressCtrl.obj"
+".\Debug\Gradient.obj"
+".\Debug\ItemBkDrawer.obj"
+".\Debug\StdAfx.obj"
+".\Debug\VideoCompressionBenchmark.obj"
+".\Debug\Benchmarksintel.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+Skipping... (no relevant changes detected)
+Benchmark.cpp
+BenchmarkDlg.cpp
+BenchmarkEnvironment.cpp
+Benchmarksintel.cpp
+BenchmarkStatusDlg.cpp
+CompressionBenchmark.cpp
+Direct3DBenchmark.cpp
+dshowutil.cpp
+ExtProgressCtrl.cpp
+Gradient.cpp
+ItemBkDrawer.cpp
+VideoCompressionBenchmark.cpp
+Linking...
+mfcs42d.lib(dllmodul.obj) : error LNK2005: _DllMain@12 already defined in MSVCRTD.lib(dllmain.obj)
+mfcs42d.lib(dllmodul.obj) : warning LNK4006: _DllMain@12 already defined in MSVCRTD.lib(dllmain.obj); second definition ignored
+   Creating library Debug/Benchmarksintel.lib and object Debug/Benchmarksintel.exp
+LINK : warning LNK4098: defaultlib "LIBCMTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+..\Benchmarksintel.dll : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+Creating temporary file "C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP30.tmp" with contents
+[
+/nologo /o"Debug/Benchmarksintel.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\d3dfont.sbr"
+".\Debug\d3dutil.sbr"
+".\Debug\dxutil.sbr"
+".\Debug\Benchmark.sbr"
+".\Debug\BenchmarkDlg.sbr"
+".\Debug\BenchmarkEnvironment.sbr"
+".\Debug\Benchmarksintel.sbr"
+".\Debug\BenchmarkStatusDlg.sbr"
+".\Debug\CompressionBenchmark.sbr"
+".\Debug\Direct3DBenchmark.sbr"
+".\Debug\dshowutil.sbr"
+".\Debug\ExtProgressCtrl.sbr"
+".\Debug\Gradient.sbr"
+".\Debug\ItemBkDrawer.sbr"
+".\Debug\VideoCompressionBenchmark.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\EMILIO~1.POR\IMPOST~1\Temp\RSP30.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Benchmarksintel.dll - 2 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
